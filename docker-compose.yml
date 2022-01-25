@@ -7,7 +7,7 @@ services:
       - '9999:9999'
 
   postgres:
-    image: postgres:12.0-alpine
+    image: postgres:14
     container_name: pstg-container
     ports:
       - '5432:5432'
@@ -17,7 +17,7 @@ services:
       - POSTGRES_DB=app
 
   mysql:
-    image: mysql:8.0.18
+    image: mysql:8.0
     container_name: mysql-container
     ports:
       - '3306:3306'
